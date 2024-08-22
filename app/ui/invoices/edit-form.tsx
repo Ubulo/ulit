@@ -18,6 +18,7 @@ export default function EditInvoiceForm({
   invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
+  // WHY DO WE NEED TO USE BIND ? 
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
   return (
     <form action={updateInvoiceWithId}>
